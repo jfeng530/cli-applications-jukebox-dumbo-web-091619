@@ -21,8 +21,8 @@ end
 def play(song_arr)
   puts "Please enter a song name or number:"
   input = gets.chomp
-  if input.to_i >= 1 && input.to_i <= songs.length
-    puts "Playing #{songs[input.to_i - 1]}"
+  if input.to_i >= 1 && input.to_i <= song_arr.length
+    puts "Playing #{song_arr[input.to_i - 1]}"
   elsif song_arr.include?(input)
     puts "Playing #{input}"
   else
