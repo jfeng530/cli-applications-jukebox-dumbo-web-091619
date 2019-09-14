@@ -42,18 +42,18 @@ end
 
 def run 
   while true do
-  puts "Please enter a command:"
-  run_input = gets.strip
-  case run_input
-    when "list"
-      list(songs)
-    when "play"
-      play(songs)
-    when "help"
-      help(songs)
-    when "exit"
-      exit_jukebox
-      break
-    end
+    puts "Please enter a command:"
+    run_input = gets.strip
+      case run_input
+        when "list"
+          list(songs)
+        when "play"
+          play(songs)
+        when "help"
+          help(songs)
+        when "exit"
+          exit_jukebox
+          break
+      end
   end
 end
