@@ -45,13 +45,13 @@ def run
   run_input = gets.strip
   case run_input
     when "list"
-      list
+      list(songs)
     when "play"
-      play
+      play(songs)
     when "help"
-      help
+      help(songs)
     when "exit"
-      exit
-      end
+      exit_jukebox
+      break
     end
 end
