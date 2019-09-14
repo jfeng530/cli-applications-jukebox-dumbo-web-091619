@@ -43,7 +43,7 @@ end
 def run 
   while true do
     puts "Please enter a command:"
-    run_input = gets.strip
+    run_input = gets.chomp
       case run_input
       when "list"
         list(songs)
